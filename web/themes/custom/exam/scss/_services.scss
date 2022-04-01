@@ -1,0 +1,8 @@
+@import "../scss/_variables.scss";
+#block-views-block-services-block-1{
+  .view-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+

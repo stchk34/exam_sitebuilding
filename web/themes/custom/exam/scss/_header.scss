@@ -1,0 +1,45 @@
+@import "../scss/variables";
+.header {
+  z-index: 0;
+  padding-bottom: 20px;
+  background-color: blue;
+  background-image: url("../img/header/header.png");
+  background-position: center;
+  background-size: cover;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 40px;
+    min-height: 700px;
+  }
+}
+
+#navbar-main {
+  padding: 0;
+  position: relative;
+  background-color:#fffa90;
+
+  .navbar-collapse {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &::before, &::after {
+    z-index: -1;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30%;
+    width: 55%;
+    height: 70%;
+    border-radius: 45%;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &::before {
+    left: 16px;
+  }
+
+  &::after {
+    right: 16px;
+  }}
+

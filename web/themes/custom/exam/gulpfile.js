@@ -6,8 +6,9 @@ sourcemaps = require('gulp-sourcemaps'),
   autoprefixer = require('autoprefixer');
 var paths = {
   styles: {
-    src: 'scss/**/*.scss',
-    dest: 'css'
+      src: './scss/style.scss',
+      dest: './css',
+      watch: './scss/**/*.scss',
   }
 };
 function buildCss() {
