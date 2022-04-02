@@ -1,14 +1,5 @@
 $grid-gutter-width:30px;
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1170px+$grid-gutter-width,
-) ;
-
-
 $font-family-base:'Source Sans Pro', sans-serif;
-
 
 $grid-breakpoints: (
   xs: 0,
@@ -21,5 +12,21 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1250px
 ) ;
+
+$blue: #6e9bca;
+$primary:#373645;
+$primary-light:#DCDFCB;
+$white: #fff;
+$project-green:#6AD3BE;
+$project-red:#E84C3D;
+$project-purple:#9B58B5;
+$project-blue:#4DA9E0;
+$search-blue: #67bfdc;
+$contact-red: #e23012;
+//$link-color: $white;
+$link-decoration: none;
+$link-hover-color: $primary;
+$link-hover-decoration: underline;
+$grid-gutter-width: 30px;

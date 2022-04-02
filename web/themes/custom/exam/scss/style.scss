@@ -7,19 +7,23 @@
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/nav";
-@import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/utilities";
+
+
 @import "../scss/header";
+@import"../scss/about";
 @import "../scss/services";
-@import "../scss/_team.scss";
-@import "../scss/_projects.scss";
+@import "../scss/projects";
+@import "../scss/team";
+@import "../scss/news";
+@import "../scss/clients";
 @import "../scss/_footer.scss";
 
 html,body{
   margin:0;
   padding:0;
+  border: none;
 }
 html {
   scroll-behavior: smooth;
@@ -29,9 +33,44 @@ body {
   flex-direction: column;
   min-height: 100%;
   font-family:$font-family-base;
+  overflow-x: hidden;
 }
-img{
-  max-width:100%;
-  height:auto;
+
+p{
+  margin:0;
+  text-align:center;
+}
+ul {
+  list-style: none;
+}
+h2{
+  text-transform: uppercase;
+  color:$primary;
+  line-height: 61px;
+  font-size: 29px;
+  font-weight: 700;
+  &:before, &:after {
+    background-color:$primary-light;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 44%;
+  }
+}
+.section{
+
+}
+.field-content, a{
+  text-transform:uppercase;
+}
+.views-field-title{
+  color:$primary;
+  font-size:21px;
+  font-weight:300;
+}
+.col{
+  padding:0;
 }
 

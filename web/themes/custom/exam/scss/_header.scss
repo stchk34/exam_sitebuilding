@@ -1,8 +1,9 @@
 @import "../scss/variables";
+
 .header {
   z-index: 0;
   padding-bottom: 20px;
-  background-color: blue;
+  background-color: $primary-light;
   background-image: url("../img/header/header.png");
   background-position: center;
   background-size: cover;
@@ -16,7 +17,7 @@
 #navbar-main {
   padding: 0;
   position: relative;
-  background-color:#fffa90;
+  background-color: $white;
 
   .navbar-collapse {
     padding-left: 1rem;
@@ -31,8 +32,8 @@
     top: 30%;
     width: 55%;
     height: 70%;
-    border-radius: 45%;
-    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.5);
   }
 
   &::before {
@@ -41,5 +42,76 @@
 
   &::after {
     right: 16px;
-  }}
+  }
+
+  .site-branding {
+    align-self: stretch;
+  }
+
+  .navbar-toggler {
+    margin: $grid-gutter-width * .5;
+
+    .hamburger-line-1,
+    .hamburger-line-2,
+    .hamburger-line-3 {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 4px auto;
+      border-radius: 1px;
+      background-color: $primary-light;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    &:not(.collapsed) {
+      .hamburger-line-1 {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      .hamburger-line-2 {
+        opacity: 0;
+      }
+
+      .hamburger-line-3 {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .navbar-collapse {
+      padding-bottom: 0;
+    }
+  }
+}
+
+#navbar-top {
+  padding: 0;
+}
+
+.separator {
+  display: flex;
+  column-gap: 5px;
+  align-items: stretch;
+  margin-bottom: 45px;
+  height: 5px;
+  background-color: $primary;
+
+  &::before {
+    flex-basis: 32%;
+    content: '';
+    background-color: $primary;
+  }
+
+  &::after {
+    flex-grow: 1;
+    content: '';
+    background-color: $primary-light;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 70px;
+  }
+}
+
 

@@ -1,8 +1,8 @@
 global-styling:
   version: VERSION
+  js:
+    js/bootstrap.bundle.min.js: { }
+
   css:
     component:
-  css/style.css: {}
-  js:
-      js/bootstrap.bundle.min.js: { }
-      js/jquery.js: { }
+      css/style.css: {}
