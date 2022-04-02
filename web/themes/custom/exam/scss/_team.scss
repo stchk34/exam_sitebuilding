@@ -1,8 +1,12 @@
 #block-views-block-our-team-block-1{
   margin-top: 83px;
+  margin-bottom: 153px;
   .view-content{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include media-breakpoint-down(md) {
+
+    }
   }
   .views-row{
     display: flex;
@@ -40,18 +44,6 @@
   .views-field-addtoany-share{
     margin-right:102px;
   }
-  .views-field-link-flag action-flag{
-    display:none;
-  }
-  .views-field-link-flag js-flag-flags-70 action-unflag{
-    background-image:url("../img/unflag.png") no-repeat top;}
-  .views-field-link-flag js-flag-flags-69 action-flag, .views-field-link-flag js-flag-flags-70 action-unflag{
-    display:block;
-    text-indent: -999px;
-    overflow:hidden;
-    width:20px;
-    height:20px;
-    outline:none;
-    }
+
   }
 

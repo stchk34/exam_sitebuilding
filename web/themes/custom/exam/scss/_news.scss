@@ -1,8 +1,21 @@
 @import "../scss/variables";
 #block-views-block-news-block-1{
+
   .view-content{
     display:grid;
     grid-template-columns: 1fr 1fr;
   }
-
+  .content{
+    background: repeating-linear-gradient(-45deg, $primary-light, $primary-light 10%, transparent 10%, transparent 50%);
+    background-size: 8px 8px;
+    padding:10px;
+  }
+  .views-row{
+    margin-left:20px;
+  }
+h2{
+  margin-left: 59px;
+  line-height: 59px;
+  font-size: 29px;
+}
 }

@@ -35,40 +35,46 @@
     color: $primary-light;
     font-size: 16px;
   }
-  .views-field-field-project-button{
 
-  }
 
   h2 {
     line-height: 61px;
     font-size: 23px;
     font-weight: 500;
     margin-left: 42px;
+    &:before, &:after {
+      background-color:$primary-light;
+      content: ' ';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 44%;
+    }
   }
   .content{
     background: repeating-linear-gradient(-45deg, $primary-light, $primary-light 10%, transparent 10%, transparent 50%);
     background-size: 8px 8px;
+
   }
-
-
 
   .views-field-field-project-text {
     margin-bottom: 15px;
     font-size: 14px;
 
-    [href="/app_development"] {
+    &[href="/app_development"] {
       color: #1bbc9b;
     }
 
-    [href="/drupal_project"] {
+    &[href="/drupal"] {
       color: #9b58b5;
     }
 
-    [href="/php_development"] {
+    &[href="/php_development"] {
       color: #e84c3d;
     }
 
-    [href="/web_development"] {
+    &[href="/web_development"] {
       color: #32ade1;
     }
 
