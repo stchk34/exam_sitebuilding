@@ -1,12 +1,27 @@
 @import "../scss/variables";
 .site-footer{
+  width:100%;
   flex-shrink: 0;
   background-color:$primary;
-
    &__top{
-    padding:40px;
+    padding:75px 0;
   }
-  .navbar-brand{
+  .site-branding__name{
+    font-size:33px;
+    text-transform:none;
     color:$blue;
+     letter-spacing: 2.1px;
+  }
+  .site-branding__slogan{
+    color:$white;
   }
 }
+.region-footer-first{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-addtoany-block{
+  margin: 0 -19px 16px 0px;
+}
+

@@ -18,11 +18,23 @@
   padding: 0;
   position: relative;
   background-color: $white;
-  width:78%;
-  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 78%;
+  margin: 0 auto;
 
-  .site-branding{
-    display:flex;
+  #block-mainnavigation {
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      padding: 6px;
+    }
+  }
+
+  .site-branding {
+    display: flex;
     flex-direction: column;
   }
 
