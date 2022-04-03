@@ -3,7 +3,6 @@ global-styling:
   js:
     js/bootstrap.bundle.min.js: { }
     libraries/slick/slick/slick.min.js: { }
-    js/jquery.js: { }
 
   css:
     component:
