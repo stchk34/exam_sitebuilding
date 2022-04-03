@@ -1,1 +1,12 @@
 @import "../scss/variables";
+.site-footer{
+  flex-shrink: 0;
+  background-color:$primary;
+
+   &__top{
+    padding:40px;
+  }
+  .navbar-brand{
+    color:$blue;
+  }
+}

@@ -55,4 +55,8 @@
   }
 
 }
+.contextual-region node node--type-team node--promoted node--view-mode-full clearfix{
+  display:grid;
+  grid-templates-column:1fr 1fr 1fr;
+}
 
