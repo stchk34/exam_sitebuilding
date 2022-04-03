@@ -1,36 +1,41 @@
 @import "../scss/_variables.scss";
-#block-views-block-about-block-1-2{
-  display:inline-flex;
+
+#block-views-block-about-block-1-2 {
+  display: inline-flex;
   align-items: center;
   margin: 105px 0 78px;
   border-top: 5px solid $primary;
   border-bottom: 5px solid $blue;
-  .views-row{
+
+  .views-row {
     display: inline-flex;
     align-items: center;
-    margin-left:39px;
+    margin-left: 39px;
   }
-  h2{
-    margin:0;
+
+  h2 {
+    margin: 0;
     display: inherit;
   }
- .views-field-field-about-text{
-   color: grey;
-   margin: 0;
-   font-weight: 300;
-   font-size: 19px;
-   letter-spacing: 0.1px;
-   text-align: center;
- }
-  .views-field-field-about-button{
+
+  .views-field-field-about-text {
+    color: grey;
+    margin: 0;
+    font-weight: 300;
+    font-size: 19px;
+    letter-spacing: 0.1px;
+    text-align: center;
+  }
+
+  .views-field-field-about-button {
     text-align: center;
     height: 30px;
     line-height: 31px;
     font-size: 14px;
     width: 112px;
-    margin:0 15px 0 44px;
+    margin: 0 15px 0 44px;
     color: white;
-    background-color:$blue;
+    background-color: $blue;
   }
 }
 

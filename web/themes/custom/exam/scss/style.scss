@@ -58,8 +58,17 @@ h2{
     vertical-align: middle;
     width: 44%;
   }
-}
+  @include media-breakpoint-down(md) {
+    font-size: 23px;
+   &:before, &:after{
+     width: 38%;
+   }
+  }
 
+}
+.container{
+  flex-grow:1;
+}
 .field-content, a{
   text-transform:uppercase;
 }

@@ -1,49 +1,58 @@
-#block-views-block-our-team-block-1{
+#block-views-block-our-team-block-1 {
   margin-top: 83px;
   margin-bottom: 153px;
-  .view-content{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    @include media-breakpoint-down(md) {
 
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include media-breakpoint-down(lg) {
+      grid-template-columns:1fr 1fr;
+    }
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:1fr;
     }
   }
-  .views-row{
+
+  .views-row {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  h2{
-    text-transform: uppercase;
-    color: #373645;
+
+  h2 {
     line-height: 60px;
     font-size: 28px;
     font-weight: 700;
   }
-  .views-field-title{
+
+  .views-field-title {
     font-size: 24px;
   }
-  .views-field-field-team-media{
+
+  .views-field-field-team-media {
     margin: 11px 0 31px;
   }
-  .views-field-field-team-position{
-    font-size:11px;
+
+  .views-field-field-team-position {
+    font-size: 11px;
     margin: -4px 0 17px;
   }
-  .views-field-field-team-button{
+
+  .views-field-field-team-button {
     text-align: center;
     height: 29px;
     line-height: 29px;
     font-size: 14px;
     width: 100px;
-    margin-bottom:26px;
+    margin-bottom: 26px;
     color: white;
-    background-color:$blue;
-  }
-  .views-field-addtoany-share{
-    margin-right:102px;
+    background-color: $blue;
   }
 
+  .views-field-addtoany-share {
+    margin-right: 102px;
   }
+
+}
 

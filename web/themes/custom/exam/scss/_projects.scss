@@ -1,33 +1,43 @@
 @import "../scss/variables";
+
 #block-views-block-projects-block-1 {
 
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: -8px;
-
+    @include media-breakpoint-down(lg) {
+      grid-template-columns:1fr 1fr;
+    }
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:1fr;
+    }
   }
- .views-field-field-project-media{
-   margin: 66px 0 32px;
- }
+
+  .views-field-field-project-media {
+    margin: 66px 0 32px;
+  }
+
   .views-row {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-    background-color:$white;
-    border-bottom:1px solid $primary;
+    background-color: $white;
+    border-bottom: 1px solid $primary;
     margin-bottom: 40px;
   }
-  .views-field-title{
-    font-size:24px;
+
+  .views-field-title {
+    font-size: 24px;
   }
+
   .js-pager__items {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:0;
+    padding: 0;
     margin-bottom: 142px;
   }
 
@@ -41,9 +51,9 @@
     line-height: 61px;
     font-size: 23px;
     font-weight: 500;
-    margin-left: 42px;
+
     &:before, &:after {
-      background-color:$primary-light;
+      background-color: $primary-light;
       content: ' ';
       display: inline-block;
       height: 1px;
@@ -51,8 +61,10 @@
       vertical-align: middle;
       width: 44%;
     }
+
   }
-  .content{
+
+  .content {
     background: repeating-linear-gradient(-45deg, $primary-light, $primary-light 10%, transparent 10%, transparent 50%);
     background-size: 8px 8px;
 
@@ -80,7 +92,7 @@
 
   }
 
-  .views-field-field-project-button{
+  .views-field-field-project-button {
     text-align: center;
     height: 29px;
     line-height: 29px;
@@ -88,7 +100,7 @@
     width: 70px;
     color: white;
     margin: 6px 4px 13px -4px;
-    background-color:$blue;
+    background-color: $blue;
   }
 
 }
