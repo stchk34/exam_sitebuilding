@@ -12,8 +12,9 @@
     padding-top: 40px;
     min-height: 700px;
   }
-  .block-addtoany-block{
-    .content{
+
+  .block-addtoany-block {
+    .content {
       padding: 42px 0px 28px 116px;
     }
   }
@@ -28,6 +29,10 @@
   width: 65%;
   margin: 0 auto;
 
+  .site-branding-block {
+    background-color: $primary;
+  }
+
   #block-mainnavigation {
     margin: 22px 0px 0px 15px;
     padding: 0;
@@ -41,16 +46,19 @@
   .site-branding {
     display: flex;
     flex-direction: column;
-    &__name{
-      font-size: 36px;
+
+    &__name {
+      font-size: 33px;
       text-transform: none;
-      margin: 4px 2px 0px 0px;
+      margin: 0px 6px 0px 0px;
       letter-spacing: 1px;
-      color:$blue;
-      line-height:32px;
+      color: $blue;
+      line-height: 32px;
+    }
+    &__slogan{
+      color:$white;
     }
   }
-
 }
 
 
