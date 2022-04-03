@@ -1,7 +1,7 @@
 @import "../scss/variables";
 
 #block-views-block-projects-block-1 {
-
+  @extend %container;
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -77,15 +77,15 @@
     a {
       text-decoration: none;
 
-      &[href="/services/web-development"] {
+      &[href="/services/web_development"] {
         color: #1bbc9b;
       }
 
-      &[href="/services/php-development"] {
+      &[href="/services/php_development"] {
         color: #9b58b5;
       }
 
-      &[href="/services/app-development"] {
+      &[href="/services/app_development"] {
         color: #e84c3d;
       }
 

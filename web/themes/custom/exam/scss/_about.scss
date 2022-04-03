@@ -1,6 +1,7 @@
 @import "../scss/_variables.scss";
 
 #block-views-block-about-block-1-2 {
+  @extend %container;
   display: inline-flex;
   align-items: center;
   margin: 105px 0 78px;

@@ -1,4 +1,6 @@
+@import "../scss/_variables.scss";
 #block-views-block-our-team-block-1 {
+  @extend %container;
   margin-top: 83px;
   margin-bottom: 159px;
 

@@ -1,5 +1,6 @@
 @import "../scss/variables";
 #block-views-block-news-block-1 {
+  @extend %container;
   margin-bottom: 89px;
 }
 #slick-views-clients-block-1-1-slider {

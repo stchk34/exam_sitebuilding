@@ -1,7 +1,8 @@
 @import "../scss/variables";
 
 #block-views-block-news-block-1 {
-  margin-bottom: 80px;
+  @extend %container;
+  margin-bottom: 83px;
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
