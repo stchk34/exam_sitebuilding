@@ -4,13 +4,14 @@
   flex-shrink: 0;
   background-color:$primary;
    &__top{
-    padding:75px 0;
+     padding: 80px 0 56px;
   }
   .site-branding__name{
     font-size:33px;
     text-transform:none;
     color:$blue;
      letter-spacing: 2.1px;
+    line-height:37px;
   }
   .site-branding__slogan{
     color:$white;

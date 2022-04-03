@@ -12,6 +12,11 @@
     padding-top: 40px;
     min-height: 700px;
   }
+  .block-addtoany-block{
+    .content{
+      padding: 42px 0px 28px 116px;
+    }
+  }
 }
 
 #navbar-main {
@@ -20,12 +25,12 @@
   background-color: $white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 78%;
+  width: 65%;
   margin: 0 auto;
 
   #block-mainnavigation {
+    margin: 22px 0px 0px 15px;
     padding: 0;
-    margin: 0;
     display: flex;
 
     li {
@@ -36,8 +41,19 @@
   .site-branding {
     display: flex;
     flex-direction: column;
+    &__name{
+      font-size: 36px;
+      text-transform: none;
+      margin: 4px 2px 0px 0px;
+      letter-spacing: 1px;
+      color:$blue;
+      line-height:32px;
+    }
   }
 
 }
+
+
+
 
 
