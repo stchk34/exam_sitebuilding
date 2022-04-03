@@ -15,7 +15,7 @@
 
   .block-addtoany-block {
     .content {
-      padding: 42px 0px 28px 116px;
+      padding: 43px 0px 28px 111px;
     }
   }
 }
@@ -40,6 +40,9 @@
 
     li {
       padding: 6px;
+      a{
+        font-size:16px;
+      }
     }
   }
 
@@ -55,11 +58,33 @@
       color: $blue;
       line-height: 32px;
     }
-    &__slogan{
-      color:$white;
+
+    &__slogan {
+      color: $white;
+    }
+  }
+
+  .addtoany_list > a {
+    border: 0;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 5px;
+  }
+
+  #block-searchform {
+    display: flex;
+    align-items: flex-end;
+    #edit-keys{
+      padding: 0px 0px 9px 7px;
+      margin: 0px 0px -9px;
+    }
+    #edit-actions{
+
     }
   }
 }
+
+
 
 
 

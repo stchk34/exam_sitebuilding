@@ -1,8 +1,7 @@
 @import "../scss/_variables.scss";
 #block-views-block-our-team-block-1 {
   @extend %container;
-  margin-top: 83px;
-  margin-bottom: 159px;
+  margin: 83px 0 155px 0;
 
   .view-content {
     display: grid;
@@ -58,7 +57,9 @@
   .views-field-addtoany-share {
     margin-right: 102px;
   }
-
+  .views-field-link-flag{
+    margin: -25px 0px 27px 168px;
+  }
 }
 .contextual-region node node--type-team node--promoted node--view-mode-full clearfix{
   display:grid;

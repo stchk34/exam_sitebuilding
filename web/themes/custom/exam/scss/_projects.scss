@@ -109,5 +109,25 @@
       }
     }
   }
-
+  .pagerer-widget{
+    padding:0 5px;
+    border-width: 0;
+    color: #555555;
+    background-color: rgba(0, 0, 0, 0);
+    &:hover{
+      background-color: #cecece;
+      border-radius: 50%;
+      border-width: 0;
+      color: #555555;
+    }
+     a{
+       padding:0 5px;
+       &:hover{
+         background-color: #cecece;
+         border-radius: 50%;
+         border-width: 0;
+         color: #555555;
+       }
+     }
+  }
 }

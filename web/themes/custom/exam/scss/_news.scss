@@ -2,7 +2,7 @@
 
 #block-views-block-news-block-1 {
   @extend %container;
-  margin-bottom: 113px;
+  margin-bottom: 31px;
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -22,5 +22,9 @@
   h2 {
     line-height: 59px;
     font-size: 29px;
+  }
+
+  .js-form-item{
+    margin-top:13px;
   }
 }

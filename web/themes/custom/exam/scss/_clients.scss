@@ -1,4 +1,5 @@
 @import "../scss/variables";
 #slick-views-clients-block-1-1-slider {
+  @extend %container;
   margin: 46px 0px 139px;
 }
