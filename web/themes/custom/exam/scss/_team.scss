@@ -1,6 +1,6 @@
 #block-views-block-our-team-block-1 {
   margin-top: 83px;
-  margin-bottom: 153px;
+  margin-bottom: 159px;
 
   .view-content {
     display: grid;
@@ -45,9 +45,12 @@
     line-height: 29px;
     font-size: 14px;
     width: 100px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     color: white;
-    background-color: $blue;
+    background-color: $primary;
+    a{
+      color:$white;
+    }
   }
 
   .views-field-addtoany-share {

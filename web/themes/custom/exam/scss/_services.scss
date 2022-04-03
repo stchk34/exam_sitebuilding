@@ -37,15 +37,17 @@
   .content{
     margin-top:84px;
   }
-  .views-field-field-services-button{
+  .views-field-field-services-buttons{
     text-align: center;
     height: 29px;
     line-height: 31px;
     font-size: 14px;
     width: 99px;
-    color: white;
     margin-top: 26px;
     background-color:$blue;
+    a{
+      color:$white;
+    }
   }
 .views-field-title{
   font-size: 19px;

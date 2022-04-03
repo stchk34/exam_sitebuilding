@@ -74,33 +74,40 @@
     margin-bottom: 15px;
     font-size: 14px;
 
-    &[href="/app_development"] {
-      color: #1bbc9b;
-    }
+    a {
+      text-decoration: none;
 
-    &[href="/drupal"] {
-      color: #9b58b5;
-    }
+      &[href="/services/web-development"] {
+        color: #1bbc9b;
+      }
 
-    &[href="/php_development"] {
-      color: #e84c3d;
-    }
+      &[href="/services/php-development"] {
+        color: #9b58b5;
+      }
 
-    &[href="/web_development"] {
-      color: #32ade1;
-    }
+      &[href="/services/app-development"] {
+        color: #e84c3d;
+      }
 
+      &[href="/services/drupal"] {
+        color: #32ade1;
+      }
+    }
   }
 
-  .views-field-field-project-button {
+  .views-field-field-button-services {
     text-align: center;
     height: 29px;
     line-height: 29px;
     font-size: 14px;
     width: 70px;
-    color: white;
     margin: 6px 4px 13px -4px;
-    background-color: $blue;
+    background-color: $primary;
+    .field-content{
+      a{
+        color:$white;
+      }
+    }
   }
 
 }
