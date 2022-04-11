@@ -12,16 +12,15 @@
     }
   }
 
-  .content {
+  .form-group {
     background: repeating-linear-gradient(-45deg, $primary-light, $primary-light 10%, transparent 10%, transparent 50%);
     background-size: 8px 8px;
     padding: 10px;
   }
 
-  .views-row {
-    margin-left: 20px;
-    background-color: $white;
-
+  .node--view-mode-teaser {
+    border-bottom: none;
+    padding: 0;
   }
 
   h2 {
@@ -41,6 +40,7 @@
       width: 46%;
     }
   }
+
   .form-row {
     display: flex;
 
@@ -53,10 +53,11 @@
     border-radius: 10px;
     padding: 4px 19px 8px 15px;
     background-color: $search-blue;
-    border-color:$search-blue;
+    border-color: $search-blue;
+
     &:active {
-      background-color:$primary;
-      color:$white;
+      background-color: $primary;
+      color: $white;
     }
   }
 
@@ -68,19 +69,111 @@
     padding: 4px 0px 6px 23px;
   }
 
-  .views-field-field-customize-date {
-    display: inline-flex;
-    font-size: 20px;
+  .views-row {
+    margin-left: 20px;
+    background-color: $white;
+    text-transform: uppercase;
 
-    &-1 {
-
+    .layout__region--second {
+      display: grid;
+      grid-template-columns:1fr 2fr 1fr 1fr;
     }
 
-    &-2 {
-
+    .layout--onecol {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .layout__region--first {
+      margin-right: -45px;
     }
   }
+
+  .node__title {
+    display: none;
+  }
+
+  .block-field-blocknodenewsfield {
+    &-news-media {
+      margin: 0 5px 0 -38px;
+      padding-left: 5px;
+      border-left: 2px solid $primary-light;
+    }
+
+    &-news-date {
+      color: $blue;
+      font-size: 52px;
+      line-height: 33px;
+      font-weight: bolder;
+
+      &:first-child {
+        color: $black;
+        font-size: 25px;
+        font-weight: 300;
+      }
+
+      &:last-child {
+        color: $primary-light;
+        font-size:14px;
+      }
+
+    }
+
+    &-employees-name {
+      display: inline-flex;
+      justify-content: flex-start;
+      color: $blue;
+      font-size: 15px;
+    }
+
+    &-employees-position {
+      font-size: 15px;
+    }
+
+    &-button-news {
+      text-align: center;
+      height: 29px;
+      line-height: 29px;
+      font-size: 14px;
+      width: 100px;
+      margin: 13px 78% 0px;
+      color: white;
+      background-color: $primary;
+
+      a {
+        color: $white;
+      }
+    }
+
+    &-text-news {
+      letter-spacing: 0.1px;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+      margin-left: 109px;
+    }
+
+  }
+
+  .block-field-blocknodenewstitle {
+    text-align: end;
+    font-size: 25px;
+  }
+
+  .employees_job, .employees_personal {
+    color: $primary-light;
+  }
+  .employees_michalle , .employees_personal{
+    font-size:12px;
+  }
+  .field--name-field-publication-date {
+    font-size: 13px;
+    color: $primary-light;
+  }
 }
+
+
+
 
 
 
