@@ -40,8 +40,14 @@
 
     li {
       padding: 6px;
-      a{
-        font-size:16px;
+
+      a {
+        font-size: 16px;
+        border-bottom:2px solid transparent;
+        &:hover{
+          border-bottom:2px solid $primary;
+          margin-top:10px;
+        }
       }
     }
   }
@@ -74,15 +80,45 @@
   #block-searchform {
     display: flex;
     align-items: flex-end;
-    #edit-keys{
+
+    #edit-keys {
       padding: 0px 0px 9px 7px;
       margin: 0px 0px -9px;
     }
-    #edit-actions{
 
+    #edit-keys {
+      border-color: $primary-light;
     }
   }
 }
+
+#block-views-block-creativity-block-1-2 {
+  position: relative;
+  margin-top: -404px;
+  margin-bottom: 280px;
+  width:100%;
+
+  .views-field-title {
+    font-size: 62px;
+    color: white;
+    text-align: center;
+    line-height: 61px;
+    font-weight: lighter;
+  }
+
+  .views-field-field-subtitle {
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: 0.9px;
+    color: $primary;
+  }
+
+  .views-field-field-description-header {
+    color: $blue;
+  }
+
+}
+
 
 
 

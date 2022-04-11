@@ -3,9 +3,13 @@
 #block-views-block-news-block-1 {
   @extend %container;
   margin-bottom: 31px;
+
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include media-breakpoint-down(md) {
+      grid-template-columns:1fr;
+    }
   }
 
   .content {
@@ -16,15 +20,67 @@
 
   .views-row {
     margin-left: 20px;
-    background-color:$white;
+    background-color: $white;
+
   }
 
   h2 {
     line-height: 59px;
-    font-size: 29px;
+    font-size: 31px;
+    text-transform: uppercase;
+    color: $primary;
+    font-weight: 700;
+
+    &:before, &:after {
+      background-color: $primary-light;
+      content: ' ';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 46%;
+    }
+  }
+  .form-row {
+    display: flex;
+
+    .form-actions {
+      align-self: center;
+    }
   }
 
-  .js-form-item{
-    margin-top:13px;
+  #edit-submit-news {
+    border-radius: 10px;
+    padding: 4px 19px 8px 15px;
+    background-color: $search-blue;
+    border-color:$search-blue;
+    &:active {
+      background-color:$primary;
+      color:$white;
+    }
+  }
+
+  .js-form-item {
+    margin-top: 13px;
+  }
+
+  .form-control {
+    padding: 4px 0px 6px 23px;
+  }
+
+  .views-field-field-customize-date {
+    display: inline-flex;
+    font-size: 20px;
+
+    &-1 {
+
+    }
+
+    &-2 {
+
+    }
   }
 }
+
+
+

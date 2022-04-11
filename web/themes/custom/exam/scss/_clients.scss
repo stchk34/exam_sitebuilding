@@ -1,5 +1,29 @@
 @import "../scss/variables";
+#block-views-block-clients-block-1 {
+
+  h2 {
+    text-transform: uppercase;
+    color: $primary;
+    line-height: 61px;
+    font-size: 29px;
+    font-weight: 700;
+
+    &:before, &:after {
+      background-color: $primary-light;
+      content: ' ';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 45%;}
+  .block-layout-builder{
+
+  }
+}
+}
 #slick-views-clients-block-1-1-slider {
   @extend %container;
   margin: 46px 0px 139px;
 }
+
+

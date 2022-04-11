@@ -1,7 +1,7 @@
 @import "../scss/_variables.scss";
 #block-views-block-our-team-block-1 {
   @extend %container;
-  margin: 83px 0 155px 0;
+  margin: 92px 0 155px 0;
 
   .view-content {
     display: grid;
@@ -25,6 +25,17 @@
     line-height: 60px;
     font-size: 28px;
     font-weight: 700;
+    text-transform: uppercase;
+    color:$primary;
+      &:before, &:after {
+        background-color:$primary-light;
+        content: ' ';
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 43%;
+      }
   }
 
   .views-field-title {
@@ -60,9 +71,5 @@
   .views-field-link-flag{
     margin: -25px 0px 27px 168px;
   }
-}
-.contextual-region node node--type-team node--promoted node--view-mode-full clearfix{
-  display:grid;
-  grid-templates-column:1fr 1fr 1fr;
 }
 

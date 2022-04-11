@@ -1,11 +1,85 @@
 @import "../scss/variables";
+
 .view-id-contact_ {
-  .node__title{
-    margin-top:54px;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 53px
+  }
+
+  h2 {
+    text-align: center;
     text-transform: uppercase;
-    color: #373645;
-    line-height: 61px;
+    color: $primary;
+    margin: 67px 43%;
+    font-size: 23px;
     font-weight: 700;
+    &:after{
+      display: block;
+      content: '';
+      width: 55px;
+      position: relative;
+      height: 4px;
+      background-color:$primary-light;
+      margin: 0 auto;
+      transform: translate(0px, 10px);
+    }
+  }
+
+  .layout--twocol-section--50-50 {
+    display: flex;
+    flex-wrap: nowrap;
 
   }
+
+  #webform-submission-contact-us-node-97-add-form {
+    margin-left: 165px;
+    margin-right: 17px;
+  }
+  }
+
+  #edit-full-name {
+    padding: 10px 0;
+    width: 462px;
+    text-transform: uppercase;
+  }
+
+  #edit-email-contact {
+    padding: 10px 0;
+    width: 462px;
+    text-transform: uppercase;
+  }
+
+  #edit-phone-contact {
+    padding: 10px 0;
+    width: 462px;
+    text-transform: uppercase;
+  }
+
+  #edit-your-message {
+    width: 462px;
+    padding: 35px 0;
+    text-transform: uppercase;
+  }
+
+  #edit-actions-submit {
+    width: 190px;
+    height: 48px;
+    background-color:$contact-red;
+    border-color:$contact-red;
+    text-transform: uppercase;
+    color:$white;
+  }
+.block-field-blocknodecontact-usfield-address-contact {
+   margin-bottom:16px;
+.field__item{
+  font-weight: bolder;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height:22px;
 }
+}
+
+

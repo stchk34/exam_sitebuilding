@@ -2,6 +2,7 @@
 
 #block-views-block-projects-block-1 {
   @extend %container;
+
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -30,7 +31,7 @@
   }
 
   .views-field-title {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .js-pager__items {
@@ -43,6 +44,7 @@
 
   .views-field-field-project-text {
     color: $primary-light;
+    margin-bottom: 14px;
     font-size: 16px;
   }
 
@@ -51,7 +53,8 @@
     line-height: 61px;
     font-size: 23px;
     font-weight: 500;
-
+    text-transform: uppercase;
+    color: $primary;
     &:before, &:after {
       background-color: $primary-light;
       content: ' ';
@@ -103,31 +106,21 @@
     width: 70px;
     margin: 6px 4px 13px -4px;
     background-color: $primary;
-    .field-content{
-      a{
-        color:$white;
+
+    .field-content {
+      a {
+        color: $white;
       }
     }
   }
-  .pagerer-widget{
-    padding:0 5px;
-    border-width: 0;
-    color: #555555;
-    background-color: rgba(0, 0, 0, 0);
-    &:hover{
+
+  .pager__item{
+    margin-right:10px;
+    &:hover {
       background-color: #cecece;
       border-radius: 50%;
-      border-width: 0;
+      border-width:60px;
       color: #555555;
     }
-     a{
-       padding:0 5px;
-       &:hover{
-         background-color: #cecece;
-         border-radius: 50%;
-         border-width: 0;
-         color: #555555;
-       }
-     }
   }
 }

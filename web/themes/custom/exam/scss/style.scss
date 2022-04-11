@@ -45,29 +45,7 @@ p{
 ul {
   list-style: none;
 }
-h2{
-  text-transform: uppercase;
-  color:$primary;
-  line-height: 61px;
-  font-size: 29px;
-  font-weight: 700;
-  &:before, &:after {
-    background-color:$primary-light;
-    content: ' ';
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 43%;
-  }
-  @include media-breakpoint-down(md) {
-    font-size: 23px;
-   &:before, &:after{
-     width: 38%;
-   }
-  }
 
-}
 .container{
   flex-grow:1;
 }

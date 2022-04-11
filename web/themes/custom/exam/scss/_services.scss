@@ -25,6 +25,18 @@
     margin-right: -10px;
     font-weight: 600;
     letter-spacing: 0.01px;
+    text-transform: uppercase;
+    color:$primary;
+    font-size: 29px;
+      &:before, &:after {
+        background-color:$primary-light;
+        content: ' ';
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 43%;
+      }
   }
 .views-field-field-services-text{
   color:$primary-light;
