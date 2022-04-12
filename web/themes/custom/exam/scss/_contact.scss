@@ -1,6 +1,39 @@
 @import "../scss/variables";
 
 .view-id-contact_ {
+
+#edit-full-name {
+  padding: 10px 0;
+  width: 462px;
+  text-transform: uppercase;
+}
+
+#edit-email-contact {
+  padding: 10px 0;
+  width: 462px;
+  text-transform: uppercase;
+}
+
+#edit-phone-contact {
+  padding: 10px 0;
+  width: 462px;
+  text-transform: uppercase;
+}
+
+#edit-your-message {
+  width: 462px;
+  padding: 35px 0;
+  text-transform: uppercase;
+}
+
+#edit-actions-submit {
+  width: 190px;
+  height: 48px;
+  background-color: $contact-red;
+  border-color: $contact-red;
+  text-transform: uppercase;
+  color: $white;
+}
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -39,38 +72,6 @@
   }
 }
 
-#edit-full-name {
-  padding: 10px 0;
-  width: 462px;
-  text-transform: uppercase;
-}
-
-#edit-email-contact {
-  padding: 10px 0;
-  width: 462px;
-  text-transform: uppercase;
-}
-
-#edit-phone-contact {
-  padding: 10px 0;
-  width: 462px;
-  text-transform: uppercase;
-}
-
-#edit-your-message {
-  width: 462px;
-  padding: 35px 0;
-  text-transform: uppercase;
-}
-
-#edit-actions-submit {
-  width: 190px;
-  height: 48px;
-  background-color: $contact-red;
-  border-color: $contact-red;
-  text-transform: uppercase;
-  color: $white;
-}
 
 .block-field-blocknodecontact-usfield-address-contact {
   margin-bottom: 16px;

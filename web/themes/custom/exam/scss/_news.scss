@@ -7,15 +7,16 @@
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     @include media-breakpoint-down(md) {
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
     }
   }
 
   .form-group {
     background: repeating-linear-gradient(-45deg, $primary-light, $primary-light 10%, transparent 10%, transparent 50%);
     background-size: 8px 8px;
-    padding: 10px;
+    padding: 10px 14px 55px;
   }
 
   .node--view-mode-teaser {
@@ -30,7 +31,8 @@
     color: $primary;
     font-weight: 700;
 
-    &:before, &:after {
+    &:before,
+    &:after {
       background-color: $primary-light;
       content: ' ';
       display: inline-block;
@@ -43,6 +45,10 @@
 
   .form-row {
     display: flex;
+
+    #edit-actions--2 {
+      padding: 0;
+    }
 
     .form-actions {
       align-self: center;
@@ -66,7 +72,7 @@
   }
 
   .form-control {
-    padding: 4px 0px 6px 23px;
+    padding: 4px 0 6px 23px;
   }
 
   .views-row {
@@ -76,7 +82,8 @@
 
     .layout__region--second {
       display: grid;
-      grid-template-columns:1fr 2fr 1fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr 1fr;
+      margin-bottom: 10px;
     }
 
     .layout--onecol {
@@ -84,6 +91,7 @@
       flex-direction: column;
       align-items: flex-end;
     }
+
     .layout__region--first {
       margin-right: -45px;
     }
@@ -96,7 +104,7 @@
   .block-field-blocknodenewsfield {
     &-news-media {
       margin: 0 5px 0 -38px;
-      padding-left: 5px;
+      padding-left: 15px;
       border-left: 2px solid $primary-light;
     }
 
@@ -114,7 +122,7 @@
 
       &:last-child {
         color: $primary-light;
-        font-size:14px;
+        font-size: 14px;
       }
 
     }
@@ -136,7 +144,7 @@
       line-height: 29px;
       font-size: 14px;
       width: 100px;
-      margin: 13px 78% 0px;
+      margin: 13px 78% 0;
       color: white;
       background-color: $primary;
 
@@ -149,8 +157,7 @@
       letter-spacing: 0.1px;
       font-size: 12px;
       line-height: 17px;
-      text-align: center;
-      margin-left: 109px;
+      margin-left: 160px;
     }
 
   }
@@ -160,20 +167,18 @@
     font-size: 25px;
   }
 
-  .employees_job, .employees_personal {
+  .employees_job,
+  .employees_personal {
     color: $primary-light;
   }
-  .employees_michalle , .employees_personal{
-    font-size:12px;
+
+  .employees_michalle,
+  .employees_personal {
+    font-size: 12px;
   }
+
   .field--name-field-publication-date {
     font-size: 13px;
     color: $primary-light;
   }
 }
-
-
-
-
-
-

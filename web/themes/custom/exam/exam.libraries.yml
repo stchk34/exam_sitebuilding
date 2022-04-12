@@ -2,7 +2,6 @@ global-styling:
   version: VERSION
   js:
     js/bootstrap.bundle.min.js: { }
-    libraries/slick/slick/slick.min.js: { }
 
   css:
     component:
