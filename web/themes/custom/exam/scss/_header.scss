@@ -30,7 +30,7 @@
     display: inline-flex;
   }
 
-  #edit-submit--2 {
+  #edit-submit--2{
     display: flex;
     justify-content: flex-end;
     border-radius: 0;
@@ -87,7 +87,7 @@
               transition: 0.3s;
               margin: 0 auto;
               background-color: #6e9bca;
-              transform: translate(0, 42px);
+              transform: translate(0, 40px);
             }
           }
 
@@ -101,7 +101,7 @@
 
       a {
         font-size: 16px;
-
+        margin-right: 10px;
         &:hover:after {
           display: block;
           position: absolute;
@@ -111,7 +111,7 @@
           transition: 0.3s;
           margin: 0 25px;
           background-color: #6e9bca;
-          transform: translate(0, 42px);
+          transform: translate(0, 40px);
         }
       }
     }
